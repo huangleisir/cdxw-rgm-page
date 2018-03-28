@@ -1,0 +1,284 @@
+.footer .footer-inner .footer-content{
+	background: #FFFFFF;
+	height: 70px;
+}
+.company{
+	font-size: 12px;
+	color: #c1c1c1;
+	line-height: 40px;
+}
+.company p{
+	line-height: 12px;
+}
+.footer-oper{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+	color: #666666;
+	padding: 0 20px;
+	border-left:1px solid #D9D9D9;
+	cursor: pointer;
+}
+.footer-oper a{
+	color: #666666;
+}
+.footer-oper:first-child{
+	border: 0;
+}
+
+
+.keep-left{
+	float:left;
+}
+.keep-right{
+	float:right;
+}
+.light-login{
+	background: #FFFFFF;
+}
+.login-main{
+	width:100%;
+	overflow:hidden;
+}
+.login-barbox{
+	width:100%;
+	min-height:340px;
+	overflow:hidden;
+	position:relative;
+}
+.login-barbox img{
+	width:100%;
+	height:340px;
+	display:inline-block;
+}
+.login-barbox .login-barlogo{
+	text-align: center;
+	width:100%;
+	overflow:hidden;
+	position:absolute;
+	top:93px;
+	/*left:54%;
+	margin-left:-115px;*/
+}
+.login-barbox .login-barlogo img{
+	/*width:100%;*/
+	width: 72px;
+	height:62px;
+	height:auto;
+	display:inline-block;
+}
+.login-barbox .login-bar-title{
+	width: 100%;
+	font-weight: bold;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: 0.58px;
+	line-height: 33px;
+	text-align: center;
+	overflow:hidden;
+	position:absolute;
+	top:200px;
+}
+.login-form{
+	width:300px;
+	overflow:hidden;
+	margin:auto;
+	padding-top:60px;
+}
+.login-form li{
+	height:50px;
+	border-bottom:1px solid #dcdcdc;
+}
+.login-form li .login-form-icon{
+	width:20px;
+	height:20px;
+	float:left;
+	margin-top:14px;
+}
+.login-form li .login-form-icon img{
+	width:100%;
+	height:auto;
+	display:inline-block;
+}
+.login-form li .login-form-input{
+	float:left;
+	margin-left:25px;
+	margin-top:10px;
+	color:#333;
+	border:0;
+}
+.login-form li .login-idcode{
+	width:250px;
+}
+.login-form li .login-pwcode{
+	width:200px;
+}
+.login-form li .login-forget{
+	float:left;
+	font-size:12px;
+	color:#878787;
+	margin-top:17px;
+}
+.login-form li .login-checkcode{
+	width:100px;
+}
+.login-form li .login-checkway{
+	display: inline-block;
+	width:85px;
+	height:34px;
+	background:#e3e3e3;
+	line-height: 34px;
+	font-weight: bold;
+	text-align: center;
+	color:#878787;
+	cursor: pointer;
+	vertical-align: middle;
+	float:right;
+	margin-top:7px;
+}
+.login-gobtn{
+	width:300px;
+	height:40px;
+	line-height:40px;
+	margin:auto;
+	margin-top:35px;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	background:#ff6f41;
+	border-radius:4px;
+	cursor:pointer;
+}
+.login-restips{
+	width:200px;
+	height:30px;
+	margin:auto;
+	margin-top:15px;
+	text-align:center;
+	position:relative;
+}
+.login-restips:after{
+	content:"|";
+	color:#dcdcdc;
+	font-size: 12px;
+}
+.login-restips a{
+	font-size:14px;
+	color:#6abbd6;
+}
+.login-official{
+	width:300px;
+	height:30px;
+	margin:auto;
+	margin-top:130px;
+	text-align:center;
+	color:#d1d1d1;
+	font-size:14px;
+}
+
+/*重置密码*/
+.reset-cell{
+	width:100%;
+	height:100%;
+	background:rgba(000,000,000,0.3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);/*透明度兼容*/
+	position:fixed;
+	left:0;
+	top:0;
+}
+
+.reset-box{
+	background:#FFFFFF;
+	width: 400px;
+	border-radius: 5px;
+	position: absolute;
+	top:15%;
+	left:50%;
+	margin-left:-200px;
+}
+.reset-box .reset-title{
+	border-radius: 5px 5px 0 0;
+	background:#e3e3e3;
+	height:90px;
+}
+.reset-box .reset-title h3{
+	color:#666666;
+	font-size: 20px;
+	margin:0;
+	padding-top:26px;
+	padding-bottom: 12px;
+	
+}
+.reset-box .reset-title span{
+	color:#666666;
+	font-size: 12px;
+}
+
+.input-cell{
+	padding: 18px 0;
+	border-bottom: 1px solid #DCDCDC;
+}
+.input-cell span{
+	display: inline-block;
+	width:100px;
+	font-size: 14px;
+	color:#878787;
+}
+.input-cell input{
+	width: 180px;
+	padding-left: 5px;
+	border:0;
+	outline: none;
+	font-size: 14px;
+	color:#333333;
+	vertical-align: middle;
+}
+.reset-box .reset-shop{
+	padding:0 35px;
+}
+.reset-box .reset-pwd{
+	padding:0 35px;
+}
+.reset-box .reset-pwd h4{
+	color: #6abbd6;
+	font-size:14px;
+	margin-bottom: -10px;
+	margin-top:36px;
+}
+.reset-box .reset-pay{
+	padding:0 35px;
+}
+.reset-box .reset-pay h4{
+	color: #6abbd6;
+	font-size:14px;
+	margin-bottom: -10px;
+	margin-top:36px;
+}
+
+.reset-err{
+	padding-top:10px;
+}
+.reset-err .err{
+	color:#ff6f41;
+	font-size:14px;
+}
+
+.btn-cell{
+	width: 100%;
+	padding:20px 0;
+}
+.btns{
+	width:200px !important;
+	height:40px !important;
+	font-size: 14px !important;
+	border-radius: 5px;
+	background: #ffc5b3;
+	line-height: 40px;
+	margin: 0 auto;
+	color:#FFFFFF;
+	cursor: pointer;
+}
+.btn-cell .btn-sure-on{
+	background:#ff6f41 !important;
+
+}

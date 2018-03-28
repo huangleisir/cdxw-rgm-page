@@ -1,0 +1,547 @@
+/* 基础样式 */
+
+a,
+body,
+dd,
+dl,
+dt,
+em,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+li,
+p,
+ul {
+	font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica", "sans-serif", "arial", "宋体";
+	font-size: 0.14rem;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: 0
+}
+
+body {
+	background: #fff;
+}
+
+button,
+input,
+textarea {
+	-webkit-appearance: none;
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica", "sans-serif", "arial", "宋体";
+}
+
+a {
+	text-decoration: none;
+}
+
+.p-box {
+	width: 100%;
+	overflow: hidden;
+}
+.m-box{
+	min-height: 4rem;
+}
+.none{
+	display: none !important;
+}
+
+/* 头部样式 */
+
+.head-box {
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+	box-shadow: 0 0.01rem 0.04rem 0 #e6e6e6;
+}
+
+.park-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.park-logo a {
+	width: 1.68rem;
+	height: 0.6rem;
+	padding-top: 0.2rem;
+	display: block;
+	text-align: center;
+}
+
+.park-logo img {
+	width: 0.4rem;
+	height: 0.4rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.park-logo span {
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin-left: 0.05rem;
+	font-size: 0.2rem;
+	color: #161616;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.park-nav {
+	width: 7.5rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.park-nav ul li {
+	float: left;
+	overflow: hidden;
+}
+
+.park-nav ul li a {
+	width: 1.25rem;
+	height: 0.8rem;
+	display: block;
+	font-size: 0.14rem;
+	color: #333;
+	text-align: center;
+	line-height: 0.8rem;
+}
+
+.park-nav ul li a:hover {
+	color: #B48F50;
+}
+
+.park-nav ul li.on a {
+	color: #B48F50;
+}
+
+.park-login {
+	width: 3rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-family: "Microsoft YaHei";
+	font-size: 0.14rem;
+	color: #333;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+}
+
+.park-login .login-btn {
+	width: 0.5rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	display: inline-block;
+	font-size: 0.14rem;
+	color: #333;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.park-login .login-btn:hover {
+	cursor: pointer;
+}
+
+.park-login .leave-btn {
+	width: 0.5rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	display: inline-block;
+	font-size: 0.14rem;
+	color: #333;
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid #e9e9e9;
+}
+
+.park-login .leave-btn:hover {
+	cursor: pointer;
+}
+
+.park-login .login-info {
+	height: 0.3rem;
+	line-height: 0.3rem;
+	padding-right: 0.1rem;
+	display: inline-block;
+	font-size: 0.14rem;
+	color: #333;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.park-login.unlisted {
+	/*box-sizing: content-box !important;
+	padding-right: 0.3rem;
+	background: url("../../img/icon/user.png") no-repeat right center;
+	background-size: 0.3rem 0.3rem;*/
+}
+
+
+/* 发送验证码 */
+
+.send-mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999999999;
+	display: none;
+}
+
+.send-box {
+	width: 640px;
+	height: 320px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -320px;
+	z-index: 999999999999999;
+	background: #fff;
+	transform: translateY(500%);
+	-webkit-transform: translateY(500%);
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.send-box .send-mobile {
+	width: 93.75%;
+	margin: 20px auto 20px;
+}
+
+.send-box .send-cell {
+	width: 93.75%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.send-box .send-cell .code-input {
+	width: 65%;
+}
+
+.send-box .send-cell .code-btn {
+	width: 30%;
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	background: #B48F50;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+.send-box .send-btn {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 100px;
+}
+
+.send-box .send-btn .push-btn {
+	width: 93.75%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background: #B48F50;
+	border-radius: 4px;
+}
+
+.send-box .send-btn .push-btn:hover {
+	cursor: pointer;
+}
+
+.send-box .send-btn .push-btn.lock {
+	background: #C5C5C5;
+}
+
+
+/*.send-box.show {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+
+.send-box.hide {
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+}*/
+
+.app-header-box {
+	width: 100%;
+	height: 0.38rem;
+	max-width: 640px;
+	background: #B48F50;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.app-header-box .app-header-title {
+	line-height: 0.38rem;
+	font-size: 0.16rem;
+	text-align: center;
+	color: #fff;
+}
+
+.app-header-box .app-header-back {
+	width: 0.38rem;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../../img/icon/close.png") no-repeat center center;
+	background-size: auto 40%;
+}
+
+.app-header-box .app-header-back:hover {
+	cursor: pointer;
+}
+
+
+/*弹窗提示*/
+
+.popup-hide {
+	display: none;
+}
+
+.popup-mask {
+	width: 100%;
+	min-height: 100%;
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9990;
+}
+
+.popup-content {
+	width: 100%;
+	min-height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9991;
+}
+
+.popup-fadeIn {
+	animation: h5-fadeIn 0.2s ease both;
+	-webkit-animation: h5-fadeIn 0.2s ease both;
+	-moz-animation: h5-fadeIn 0.2s ease both;
+}
+
+@keyframes h5-fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.6;
+	}
+}
+
+@-webkit-keyframes h5-fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.6;
+	}
+}
+
+@-moz-keyframes h5-fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.6;
+	}
+}
+
+.popup-fadeOut {
+	animation: h5-fadeOut 0.2s ease both;
+	-webkit-animation: h5-fadeOut 0.2s ease both;
+	-moz-animation: h5-fadeOut 0.2s ease both;
+}
+
+@keyframes h5-fadeOut {
+	0% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes h5-fadeOut {
+	0% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes h5-fadeOut {
+	0% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.popup-fadeInUp {
+	animation: h5-fadeInUp 0.2s ease both;
+	-webkit-animation: h5-fadeInUp 0.2s ease both;
+	-moz-animation: h5-fadeInUp 0.2s ease both;
+}
+
+@keyframes h5-fadeInUp {
+	0% {
+		transform: translateY(200px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes h5-fadeInUp {
+	0% {
+		-webkit-transform: translateY(200px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes h5-fadeInUp {
+	0% {
+		-moz-transform: translateY(200px);
+	}
+	100% {
+		-moz-transform: translateY(0);
+	}
+}
+
+.popup-fadeInDown {
+	animation: h5-fadeInDown 0.2s ease both;
+	-webkit-animation: h5-fadeInDown 0.2s ease both;
+	-moz-animation: h5-fadeInDown 0.2s ease both;
+}
+
+@keyframes h5-fadeInDown {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(200px);
+	}
+}
+
+@-webkit-keyframes h5-fadeInDown {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(200px);
+	}
+}
+
+@-moz-keyframes h5-fadeInDown {
+	0% {
+		-moz-transform: translateY(0);
+	}
+	100% {
+		-moz-transform: translateY(200px);
+	}
+}
+
+
+/*清除浮动*/
+
+.clearfloat {
+	zoom: 1;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+
+/* loading样式 */
+
+.loading-pop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+	width: 100%;
+	height: 100%;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+.loading-message {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 30%;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-left: -50px;
+	width: 100px;
+	height: 80px;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.loading-spinner {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	-webkit-animation: loadDot 1s linear infinite alternate;
+	animation: loadDot 1s linear infinite alternate;
+	top: 50%;
+	left: 50%;
+	/*margin-top: 4px;*/
+	margin-left: -4px;
+	position: absolute;
+}
+
+@keyframes loadDot {
+	0% {
+		background-color: #fff;
+		box-shadow: -16px 0 0 0 rgba(255, 255, 255, 0.2), 16px 0 0 0 rgba(255, 255, 255, 0.2);
+	}
+	25% {
+		background-color: rgba(255, 255, 255, 0.4);
+		box-shadow: -16px 0 0 0 #fff, 16px 0 0 0 rgba(255, 255, 255, 0.2);
+	}
+	75% {
+		background-color: rgba(255, 255, 255, 0.4);
+		box-shadow: -16px 0 0 0 rgba(255, 255, 255, 0.2), 16px 0 0 0 #fff;
+	}
+}

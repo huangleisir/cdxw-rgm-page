@@ -1,0 +1,25 @@
+*.class
+*.iml
+
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.cfg
+
+# Eclipse project files
+.project
+.classpath
+.settings
+bin/
+target/
+/target/
+
+#logs
+logs/
+/logs/
+springboot-tomcat/
+/build/
+/node_modules/
+

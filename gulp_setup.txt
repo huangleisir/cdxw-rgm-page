@@ -1,0 +1,9 @@
+npm install gulp del fs --save-dev
+
+npm install gulp-autoprefixer gulp-cached gulp-concat gulp-cssnano --save-dev
+
+npm install gulp-file-include gulp-filter gulp-imagemin gulp-inline-source --save-dev
+
+npm install gulp-jshint gulp-notify gulp-rename gulp-replace gulp-rev-append --save-dev
+
+npm install gulp-ssh gulp-uglify gulp-util jshint webpack --save-dev

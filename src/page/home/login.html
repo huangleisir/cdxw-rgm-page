@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>登录-点餐管理平台</title>
+
+		<meta name="description" content="User login page" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="../../css/lib/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/lib/font-awesome.min.css" />
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="../../css/lib/ace-fonts.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="../../css/lib/ace.min.css" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="../../css/ace-part2.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="../../css/lib/ace-rtl.min.css" />
+		
+		<link rel="stylesheet" href="../../css/lib/jquery-ui.min.css" />
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="../../css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="../../css/wxdc/common.css" />
+		<link rel="stylesheet" href="../../css/wxdc/login.css" />
+		<!--<link rel="stylesheet" href="../../css/wxdc/for_notice.css" />-->
+	</head>
+
+	<body class="login-layout light-login">
+		<div class="login-barbox">
+		   <img src="../../img/bg/bj_dengl.png" />
+		   <div class="login-barlogo">
+		   		<img src="../../img/logo/icon_logo.png" />
+		   </div>
+		   <div class="login-bar-title">捷顺通微信点餐管理系统</div>
+		</div>
+		<div class="login-main">
+			<ul class="login-form">
+			   <li>
+			   	 <div class="login-form-icon"><img src="../../img/icon/icon_user.png" /></div>
+			   	 <input id="jst-userid" class="login-form-input login-idcode" type="text" placeholder="请输入账号" />
+			   </li>
+			   <li>
+			   	 <div class="login-form-icon"><img src="../../img/icon/icon_password.png" /></div>
+			   	 <input id="jst-password" class="login-form-input login-pwcode" type="password" placeholder="请输入密码" />
+			   	 <!--<span class="login-forget">忘记密码</span>-->
+			   </li>
+			   <li>
+			   	 <div class="login-form-icon"><img src="../../img/icon/icon_verification.png" /></div>
+			   	 <input id="jst-checkcode" class="login-form-input login-checkcode" type="text" placeholder="请输入验证码" maxlength="4" />
+			   	 <img id="check-codeimg" class="login-checkway" alt="正在加载..." title="点击刷新验证码" />
+			   </li>
+			</ul>
+			<div id="jst-login" class="login-gobtn">登录</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footer-inner">
+				<!-- #section:basics/footer -->
+				<div class="footer-content">
+					<span class="bigger-120">
+						
+						<span class="company">
+							&copy;捷顺金创科技（深圳）有限公司
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="alertBox" class="hide"></div>
+		<!-- /.main-container -->
+		
+			
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='../../js/vendors/jquery.min.js'>" + "<" + "/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='../../js/jquery1x.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='../../js/vendors/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				$(document).on('click', '.toolbar a[data-target]', function(e) {
+					e.preventDefault();
+					var target = $(this).data('target');
+					$('.widget-box.visible').removeClass('visible'); //hide others
+					$(target).addClass('visible'); //show target
+				});
+			});
+
+		</script>
+		<script type="text/javascript" src="../../js/vendors/jquery-ui.min.js"></script>
+		
+		<!--加密模块-->
+		<script type="text/javascript" src="../../js/vendors/core.js"></script>
+		<script type="text/javascript" src="../../js/vendors/enc-base64.js"></script>
+		<script type="text/javascript" src="../../js/vendors/md5.js"></script>
+		<script type="text/javascript" src="../../js/vendors/num_input.js"></script>
+		
+		<!-- 自定义 -->
+		<script type="text/javascript" src="../../js/common.js"></script>
+		<script type="text/javascript" src="../../js/login.js"></script>
+	</body>
+
+</html>
